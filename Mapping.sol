@@ -8,7 +8,7 @@ contract Mapping
 
     mapping(uint => string) names;
 
-    constructor() public
+    constructor()
     {
         names[1] = "Adam";
         names[2] = "Bruce";
