@@ -8,9 +8,13 @@ contract OneD-Arrays.sol {
     string public value;
     string[] public values;
 
-    function addValue(string memory _value) public {
+    function addValue(string memory _value) public 
+    {
         values.push(_value);
     }
 
-    function valueCount() public view returns (uint) {
-        return values.length
+    function valueCount() public view returns (uint) 
+    {
+        return values.length;
+    }
+}
