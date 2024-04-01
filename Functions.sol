@@ -1,24 +1,16 @@
-// SPDX-License-Identifier: Unlicense
-
 pragma solidity ^0.8.0;
 
 contract Functions 
 {
-    string public name = "Example 1";
+    uint public count=0;
 
-    function setName(string memory _name) public 
+    function getCount() public view returns (uint) 
     {
-        name = _name;
+        return count;
     }
 
-    function getName() public view returns (string memory) 
+    function incrementCount() public 
     {
-        return name;
+        count = count + 1;
     }
-
-    function resetName() public 
-    {
-        name = "Example 1"; 
-    }
-} 
- 
+}
